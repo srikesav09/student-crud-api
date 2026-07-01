@@ -30,7 +30,10 @@ router.put("/:id", async (req, res) => {
   const updated = await Student.findByIdAndUpdate(
     req.params.id,
     req.body,
-    { new: true }
+    {
+        returnDocument: "after",
+        runValidators: true
+    }
   );
   res.json(updated);
 });
@@ -40,5 +43,5 @@ router.delete("/:id", async (req, res) => {
   await Student.findByIdAndDelete(req.params.id);
   res.json({ message: "Deleted successfully" });
 });
-
+ 
 module.exports = router;
