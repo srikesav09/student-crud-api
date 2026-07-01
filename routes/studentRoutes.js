@@ -43,5 +43,5 @@ router.delete("/:id", async (req, res) => {
   await Student.findByIdAndDelete(req.params.id);
   res.json({ message: "Deleted successfully" });
 });
-
+ 
 module.exports = router;
