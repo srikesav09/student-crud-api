@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const studentSchema = new mongoose.Schema({
   name: { type: String, required: true },
   age: Number,
-  course: String,
+  department: String,
   createdAt: {
     type: Date,
     default: Date.now
