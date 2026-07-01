@@ -6,26 +6,3 @@ node_modules/
 
 .env
 
-# Logs
-
-logs
-*.log
-npm-debug.log*
-
-# OS files
-
-.DS_Store
-Thumbs.db
-
-# Build files
-
-dist/
-build/
-
-# Optional: VS Code settings
-
-.vscode/
-
-# Coverage
-
-coverage/
