@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/students";
+const API = "/api/students";
 
 const form = document.getElementById("studentForm");
 const table = document.getElementById("studentTable");
